@@ -1,7 +1,7 @@
 
 export default function Card(props) {
     return(
-        <div className="card">
+        <div className="card" id={props.darkMode ? "dark": ""}>
            <img className="loc--img" src={props.item.imageUrl} />
            <div className="info">
                <span>📍 {props.item.location.toUpperCase()}</span><a href="https://www.w3schools.com/">View on google maps</a>

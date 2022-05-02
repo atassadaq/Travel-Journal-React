@@ -4,17 +4,26 @@ import Header from "./Header";
 import Card from "./Card";
 import data from "../data";
 
-const cards = data.map(item => {
-    return (
-        <Card
-            item={item} />
-    )
-})
+
+
 export default function App() {
+    const [darkMode, setDarkMode] = React.useState(true)
+    const cards = data.map(item => {
+        return (
+            <Card
+                item={item}
+                darkMode = {darkMode} />
+        )
+    })
+    function toggleDarkMode() {
+        setDarkMode(prevDarkMode => !prevDarkMode)
+    }
     return (
         <>
-            <Header />
-            <div className="card--container">
+            <Header
+            darkMode = {darkMode}
+            toggleDarkMode= {toggleDarkMode} />
+            <div className="card--container" id={darkMode ? "dark": ""}>
                 {cards}
             </div>
 
