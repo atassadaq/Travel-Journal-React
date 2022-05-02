@@ -1,0 +1,64 @@
+head,body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  background-color:#F55A5A ;
+  width: 100%;
+  height: 55px;
+  color: white;
+}
+.title {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+.card--container {
+  color: #2B283A;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  margin: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  width:100% ;
+}
+
+.loc--img {
+  width: 125px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 0;
+}
+.info {
+  margin-left: 10px;
+  width: 100%;
+}
+span {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+span ~ a {
+  color: #969696;
+  margin-left: 10px;
+  font-size: 10px;
+}
+h1 {
+  font-size: 25px;
+  margin-top: 0px;
+}
+h4 {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+p {
+  width: 100%;
+  font-size: 10px;
+  margin-top: 5px;
+}
